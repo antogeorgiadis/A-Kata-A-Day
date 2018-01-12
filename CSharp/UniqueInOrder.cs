@@ -9,21 +9,21 @@ using System.Linq;
 
 namespace CSharp
 {
-  public static class UniqueInOrder
-  {
-    public static IEnumerable<T> Get<T>(IEnumerable<T> iterable) 
+    public static class UniqueInOrder
     {
-      var uniqueItemsList = new List<T>();
+        public static IEnumerable<T> Get<T>(IEnumerable<T> iterable) 
+        {
+            var uniqueItemsList = new List<T>();
       
-      foreach(var element in iterable)
-      {
-        var nextIsDuplicate = element.Equals(uniqueItemsList.LastOrDefault());
+            foreach(var element in iterable)
+            {
+                var nextIsDuplicate = element.Equals(uniqueItemsList.LastOrDefault());
         
-        if (!nextIsDuplicate)
-          uniqueItemsList.Add(element);  
-      }
+                if (!nextIsDuplicate)
+                    uniqueItemsList.Add(element);  
+            }
 
-      return uniqueItemsList;
+            return uniqueItemsList;
+        }
     }
-  }
 }

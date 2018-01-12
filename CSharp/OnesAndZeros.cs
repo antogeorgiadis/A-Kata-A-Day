@@ -19,13 +19,13 @@ using System;
 
 namespace CSharp
 {
-  class OnesAndZeros
-  {
-    public static int ConvertBinaryArrayToNumber(int[] BinaryArray)
+    class OnesAndZeros
     {
-      var binaryArrayToString = string.Join("", BinaryArray);
-
-      return Convert.ToInt32(BinaryArrayToString, 2);
+        public static int ConvertBinaryArrayToNumber(int[] binaryArray)
+        {
+	        var binaryArrayToString = string.Join("", binaryArray);
+		
+            return Convert.ToInt32(binaryArrayToString, 2);
+        }
     }
-  }
 }
