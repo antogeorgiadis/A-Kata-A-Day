@@ -22,8 +22,7 @@ function GetNumbersSum($n) {
     }
 
     $numbersToAddUp  = range(1, $n);
-    $sum = array_sum($numbersToAddUp);
 
-    return $sum;
+    return array_sum($numbersToAddUp);
 }
 
