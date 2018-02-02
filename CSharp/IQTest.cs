@@ -7,8 +7,8 @@
 * Keep in mind that your task is to help Bob solve a real IQ test, which means indexes of the elements start from 1 (not 0)
 *
 * ##Examples :
-* IQ.Test("2 4 7 8 10") => 3 // Third number is odd, while the rest of the numbers are even
-* IQ.Test("1 2 1 1") => 2 // Second number is even, while the rest of the numbers are odd
+* IQTest.FindNumberBreakingPattern("2 4 7 8 10") => 3 // Third number is odd, while the rest of the numbers are even
+* IQTest.FindNumberBreakingPattern("1 2 1 1") => 2 // Second number is even, while the rest of the numbers are odd
 */
 using System;
 
