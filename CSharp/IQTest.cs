@@ -16,7 +16,7 @@ namespace CSharp
 {
     class IQTest
     {
-	    public static int Test(string numbers)
+	    public static int FindNumberBreakingPattern(string numbers)
 	    {
 	        var numbersArray = numbers.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 	        var evenNumbersCount = 0;
